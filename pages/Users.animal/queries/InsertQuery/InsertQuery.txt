@@ -1,0 +1,8 @@
+INSERT INTO users."animal" (
+	"nome",
+	"raca",
+	"porte")
+VALUES (
+	'{{insert_form.formData.nome}}',
+	'{{insert_form.formData.raca}}',
+	'{{insert_form.formData.porte}}');

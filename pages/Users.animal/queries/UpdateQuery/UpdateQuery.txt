@@ -1,0 +1,5 @@
+UPDATE users."animal" SET
+		"nome" = '{{update_form.fieldState.nome.isVisible ? update_form.formData.nome : update_form.sourceData.nome}}',
+		"raca" = '{{update_form.fieldState.raca.isVisible ? update_form.formData.raca : update_form.sourceData.raca}}',
+    "porte" = '{{update_form.fieldState.porte.isVisible ? update_form.formData.porte : update_form.sourceData.porte}}'
+WHERE "id_animal" = {{data_table.selectedRow.id_animal}};
